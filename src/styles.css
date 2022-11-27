@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: black;
+    background-color: rgb(206, 205, 246);
+    border-color:lightgrey;
+    font-weight: bold;
+    border-width: 1px;
+}

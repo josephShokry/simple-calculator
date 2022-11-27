@@ -1,0 +1,16 @@
+.calculator-frame{
+    background-color: black;
+    padding: 50 px;
+    text-align: center;
+    width: 220px;
+    border-radius: 30px;
+    border: 4px solid hwb(0 38% 62%);
+    display: grid;
+    padding: 5px;
+    align-items: center;
+    align-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    margin-top: 100px;
+}
