@@ -76,7 +76,7 @@ export class ViewService {
       }
       this.setFormula()
       this.controller.sendRequest().subscribe((response:any) => {
-        this.result = String(response)=="NaN"?"Erorr":String(response)
+        this.result = (String(response)=="NaN"||String(response)=="Infinity")?"E":String(response)
         this.lower = this.getResult()})
       this.viewSolution()
     }
