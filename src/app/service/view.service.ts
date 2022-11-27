@@ -18,12 +18,10 @@ export class ViewService {
   addElement(button:string){
     console.log("this button is " + button)
     button = button.toLowerCase()
-    if(this.endOperation && this.isNumber(button)){
+    if(this.endOperation && (this.isNumber(button)||button == "=")){
       this.clearAll()
     }
-    // else if(this.endOperation) {
-    //     this.endOperation = false
-    //   }
+
     this.endOperation = false;
 
     if(this.isNumber(button)){
