@@ -16,9 +16,9 @@ export class ViewService {
   constructor(private controller:ControllService) { }
 
   addElement(button:string){
-    console.log("this button is " + button)
     button = button.toLowerCase()
-    if(this.endOperation && (this.isNumber(button)||button == "=")){
+    if(this.endOperation && !((this.isOperation(button) && button != "=")||this.isFunction(button))){
+      console.log("entered")
       this.clearAll()
     }
 
